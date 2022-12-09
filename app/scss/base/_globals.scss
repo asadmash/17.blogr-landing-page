@@ -1,0 +1,56 @@
+@use "../utils/__util" as *;
+
+
+html {
+  @include bgimageJpg(htmlbg);
+  overflow-x: hidden;
+}
+body {
+background-color: #fff;
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow-x: visible;
+  @include breakpoint(mlarge) {
+    h1 {
+      font-size: 5.625rem;
+    }
+
+  }
+  
+}
+
+#future,
+#open-source {
+  background-color: var(--text);
+  padding: 20px;
+  text-align: center;
+  h3 {
+    font-size: 1.375rem;
+  }
+}
+h2,
+h3,
+.flex-text {
+  color: var(--body-copy);
+  padding: 20px 0;
+}
+
+.flex-text{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include breakpoint(mlarge) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.attribution {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 700;
+}

@@ -1,0 +1,58 @@
+@use '../utils/breakpoints' as *;
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+
+  img {
+    width: 170px;
+  }
+
+  #more {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h4 {
+      padding: 15px 0;
+      font-size: 20px;
+    }
+    li {
+      padding: 5px 0;
+      letter-spacing: 1px;
+
+      a {
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid var(--footer-text);
+        }
+      }
+    }
+  }
+
+  @include breakpoint(mlarge) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    img {
+      width: 100px;
+    }
+
+    #more {
+      flex-direction: row;
+      flex-basis: 60%;
+      flex-grow: 1;
+
+      .items {
+        flex-grow: 1;
+      }
+    }
+  }
+}

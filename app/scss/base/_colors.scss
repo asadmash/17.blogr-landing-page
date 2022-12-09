@@ -1,0 +1,18 @@
+:root {
+  --CTA-text: hsl(356, 100%, 66%);
+  --CTA-hover-background: hsl(355, 100%, 74%);
+  --headings: hsl(208, 49%, 24%);
+  --text: hsl(0, 0%, 100%);
+  --hover-text: hsla(0, 22%, 64%, 0.377);
+  --footer-text: hsl(240, 2%, 79%);
+  --body-copy: hsl(207, 13%, 34%);
+  --footer-background: hsl(240, 10%, 16%);
+
+  //   intro gradient
+  --intro-start: hsl(13, 100%, 72%);
+  --intro-end: hsl(353, 100%, 62%);
+
+  //   body gradient
+  --body-end: hsl(237, 17%, 21%);
+  --body-start: hsl(237, 23%, 32%);
+}

@@ -1,0 +1,46 @@
+@use "../utils/__util" as *;
+
+#future {
+  @include breakpoint(mlarge) {
+    padding-bottom: 0;
+  }
+  h2 {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .future-description {
+    display: flex;
+    align-items: center;
+    // height: 500px;
+    padding-bottom: 180px;
+    position: relative;
+    @include breakpoint(mlarge) {
+      justify-content: flex-end;
+      padding-bottom: 80px;
+    }
+  }
+
+  .future-img {
+    @include bgimageSvg(illustration-editor-mobile);
+    height: 355px;
+    width: 414px;
+
+    @include breakpoint(mlarge) {
+      @include bgimageSvg(illustration-editor-desktop);
+      position: absolute;
+      right: -15%;
+      background-size: 95%;
+      width: 47%;
+      max-height: 600px;
+      height: 160%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .future-text {
+    @include breakpoint(mlarge) {
+      padding-left: 100px;
+      max-width: 600px;
+    }
+  }
+}

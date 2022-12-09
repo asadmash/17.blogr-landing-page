@@ -1,0 +1,68 @@
+header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--intro-start);
+  background-image: url(./images/bg-pattern-intro-mobile.svg);
+  background-image: url(../../../images/bg-pattern-intro-mobile.svg),
+    linear-gradient(var(--intro-start), var(--intro-end));
+  background-size: 387%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  // display: flex;
+  border-radius: 0 0 0 100px;
+
+  #intro {
+    margin: 80px 0;
+    text-align: center;
+    h1 {
+      color: var(--text);
+    }
+    p {
+      color: var(--text);
+      margin-top: 30px;
+    }
+
+    #intro-btn {
+      margin: 60px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      > :nth-child(1) {
+        background-color: var(--text);
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1.125rem;
+        padding: 10px;
+        border: 1px solid var(--text);
+        transition: all 300ms ease-in-out;
+        a {
+          color: var(--CTA-text);
+        }
+        &:hover {
+          background-color: var(--hover-text);
+          a {
+            color: var(--text);
+          }
+        }
+      }
+      > :nth-child(2) {
+        border: 1px solid var(--text);
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        padding: 10px;
+        transition: all 300ms ease-in-out;
+        a {
+          color: var(--text);
+        }
+
+        &:hover {
+          background-color: var(--text);
+          a {
+            color: var(--CTA-text);
+          }
+        }
+      }
+    }
+  }
+}

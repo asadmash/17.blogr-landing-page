@@ -1,0 +1,52 @@
+@use "../utils/__util" as *;
+
+#art {
+  position: relative;
+  background-color: var(--headings);
+  @include bgimageSvg(bg-pattern-circles);
+  background-size: 503px;
+  background-position-x: center;
+  background-position-y: -134px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 90px 0;
+  text-align: center;
+  @include breakpoint(mlarge) {
+    display: flex;
+    background-position-x: -108px;
+    background-position-y: -221px;
+  margin: 60px 0;
+}
+
+
+
+  .art-img {
+    position: absolute;
+    background-size: 310px;
+    background-position: center;
+    @include bgimageSvg(illustration-phones);
+    // background-image: url(../../images/illustration-phones.svg);
+    height: 80%;
+    top: -150px;
+    width: 100%;
+    @include breakpoint(mlarge) {
+      left: -31%;
+      height: 205%;
+      background-size: 410px;
+    }
+  }
+
+  .art-text {
+    padding: 250px 20px 50px;
+    @include breakpoint(mlarge) {
+      padding: 90px 100px 90px 20px;
+      margin: 0 0 0 auto;
+    }
+  }
+  h2,
+  p {
+    color: var(--text);
+  }
+
+}

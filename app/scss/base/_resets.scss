@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  padding: 20px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+  a {
+    color: var(--text);
+  }
+}

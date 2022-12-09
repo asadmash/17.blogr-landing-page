@@ -1,0 +1,36 @@
+@use "../utils/__util" as *;
+#open-source {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  @include breakpoint(mlarge) {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px 0 120px;
+  }
+  .open-source-img {
+    width: 484px;
+    height: 370px;
+    @include bgimageSvg(illustration-laptop-mobile);
+    @include breakpoint(mlarge) {
+      @include bgimageSvg(illustration-laptop-desktop);
+      position: absolute;
+      left: -14%;
+      flex-basis: 40%;
+      background-size: 95%;
+      width: 47%;
+      max-height: 600px;
+      height: 160%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  #open-source-text {
+    @include breakpoint(mlarge) {
+      max-width: 600px;
+      padding-right: 100px;
+      flex-basis: 60%;
+    }
+  }
+}
